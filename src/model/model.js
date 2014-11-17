@@ -37,10 +37,10 @@ qu.model.Line = goog.defineClass(qu.model.Shape, {
 /** A user defined point in the sketch. */
 qu.model.Point = goog.defineClass(null, {
   constructor: function() {
-    /** @type {number} */
+    /** @expose @type {number} */
     this.x = 0;
 
-    /** @type {number} */
+    /** @expose @type {number} */
     this.y = 0;
   }
 });
