@@ -1,0 +1,16 @@
+{
+  "name": "quark",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "closure-library": "https://github.com/google/closure-library.git",
+    "compiler-latest": "http://dl.google.com/closure-compiler/compiler-latest.zip"
+  }
+}
