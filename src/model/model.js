@@ -1,5 +1,7 @@
 goog.provide('qu.model');
 
+
+/** Top level model of a sketch. */
 qu.model.Sketch = goog.defineClass(null, {
   /** @constructor */
   constructor: function() {
@@ -11,8 +13,12 @@ qu.model.Sketch = goog.defineClass(null, {
   }
 });
 
+
+/** Abstract class for different shapes which can be drawn. */
 qu.model.Shape = goog.defineClass(null, {});
 
+
+/** A line in the sketch. */
 qu.model.Line = goog.defineClass(qu.model.Shape, {
   constructor: function() {
     /** @type {!qu.model.Point} */
@@ -23,6 +29,8 @@ qu.model.Line = goog.defineClass(qu.model.Shape, {
   }
 });
 
+
+/** A user defined point in the sketch. */
 qu.model.Point = goog.defineClass(null, {
   constructor: function() {
     /** @type {number} */
