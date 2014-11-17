@@ -1,5 +1,7 @@
 goog.provide('qu.model');
 
+goog.require('qu.constraints');
+
 
 /** Top level model of a sketch. */
 qu.model.Sketch = goog.defineClass(null, {
@@ -15,7 +17,9 @@ qu.model.Sketch = goog.defineClass(null, {
 
 
 /** Abstract class for different shapes which can be drawn. */
-qu.model.Shape = goog.defineClass(null, {});
+qu.model.Shape = goog.defineClass(null, {
+  constructor: function() {}
+});
 
 
 /** A line in the sketch. */
